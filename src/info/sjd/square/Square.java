@@ -1,10 +1,13 @@
 package info.sjd.square;
 
+import java.util.logging.Logger;
+
 import info.sjd.AbstractShape;
-import info.sjd.Shape;
 
 public class Square extends AbstractShape {
 
+	private static Logger logger = Logger.getLogger(Square.class.getName());
+	
 	private int side;
 
 	public int getSide() {
@@ -20,4 +23,9 @@ public class Square extends AbstractShape {
 		return side*side;
 	}
 
+	public static void main(String[] args) {
+		Square square = new Square();
+		square.setSide(24);
+		logger.info("Square with site " + square.getSide() + " has area " + square.getArea());
+	}
 }
