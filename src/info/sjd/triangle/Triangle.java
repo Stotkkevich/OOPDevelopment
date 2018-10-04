@@ -1,10 +1,13 @@
 package info.sjd.triangle;
 
+import java.util.logging.Logger;
+
 import info.sjd.AbstractShape;
-import info.sjd.Shape;
 
 public class Triangle extends AbstractShape {
 
+	private static Logger logger = Logger.getLogger(Triangle.class.getName());
+	
 	private int base;
 	private int height;
 
@@ -29,4 +32,10 @@ public class Triangle extends AbstractShape {
 		return (int)(height*base/2);
 	}
 
+	public static void main(String[] args) {
+		Triangle triangle = new Triangle();
+		triangle.setBase(24);
+		triangle.setHeight(48);
+		logger.info("Triangle with base " + triangle.getBase() + " and height " + triangle.getHeight() + " has area " + triangle.getArea());
+	}
 }
