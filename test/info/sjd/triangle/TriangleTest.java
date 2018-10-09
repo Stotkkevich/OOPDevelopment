@@ -10,12 +10,12 @@ public class TriangleTest {
 	public void testGetArea() {
 
 		Triangle triangle = new Triangle();
-		triangle.setBase(24);
-		triangle.setHeight(48);
+		triangle.setBase(10);
+		triangle.setHeight(6);
 		
 		assertNotNull(triangle.getArea());
-		assertEquals(4000, triangle.getArea());
-		assertFalse(triangle.getArea() == 2500);
+		assertEquals(30, triangle.getArea());
+		assertTrue(triangle.getArea() >= 25);
 	}
 
 }
