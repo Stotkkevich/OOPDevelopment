@@ -10,10 +10,10 @@ public class SquareTest {
 	public void testGetArea() {
 		
 		Square square = new Square();
-		square.setSide(24);
+		square.setSide(8);
 		
 		assertNotNull(square.getArea());
-		assertEquals(7500, square.getArea());
-		assertTrue(square.getArea() == 8500);
+		assertEquals(64, square.getArea());
+		assertTrue(square.getArea() == 64);
 	}
 }
