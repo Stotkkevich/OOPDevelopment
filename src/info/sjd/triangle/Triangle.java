@@ -34,8 +34,8 @@ public class Triangle extends AbstractShape {
 
 	public static void main(String[] args) {
 		Triangle triangle = new Triangle();
-		triangle.setBase(24);
-		triangle.setHeight(48);
+		triangle.setBase(10);
+		triangle.setHeight(6);
 		logger.info("Triangle with base " + triangle.getBase() + " and height " + triangle.getHeight() + " has area " + triangle.getArea());
 	}
 }
