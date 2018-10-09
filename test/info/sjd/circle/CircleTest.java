@@ -10,12 +10,11 @@ public class CircleTest {
 	public void testGetArea() {
 
 		Circle circle = new Circle();
-		circle.setRadius(128);
+		circle.setRadius(5);
 		
 		assertNotNull(circle.getArea());
-		assertEquals(1234, circle.getArea());
-		assertTrue(circle.getArea() == 600);
-		assertFalse(circle.getArea() == 4890);
+		assertEquals(78, circle.getArea());
+		assertFalse(circle.getArea() == 86);
 	}
 
 }
