@@ -25,7 +25,7 @@ public class Circle extends AbstractShape {
 
 	public static void main(String[] args) {
 		Circle circle = new Circle();
-		circle.setRadius(128);
+		circle.setRadius(5);
 		logger.info("Circle with radius " + circle.getRadius() + " has area " + circle.getArea());
 	}
 }
