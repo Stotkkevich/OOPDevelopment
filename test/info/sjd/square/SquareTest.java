@@ -14,6 +14,5 @@ public class SquareTest {
 		
 		assertNotNull(square.getArea());
 		assertEquals(64, square.getArea());
-		assertTrue(square.getArea() == 64);
 	}
 }
