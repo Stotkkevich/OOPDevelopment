@@ -13,8 +13,7 @@ public class CircleTest {
 		circle.setRadius(5);
 		
 		assertNotNull(circle.getArea());
-		assertEquals(78, circle.getArea());
-		assertFalse(circle.getArea() == 86);
+		assertFalse(circle.getArea() >= 86);
 	}
 
 }
