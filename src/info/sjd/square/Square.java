@@ -25,7 +25,7 @@ public class Square extends AbstractShape {
 
 	public static void main(String[] args) {
 		Square square = new Square();
-		square.setSide(24);
+		square.setSide(8);
 		logger.info("Square with site " + square.getSide() + " has area " + square.getArea());
 	}
 }
