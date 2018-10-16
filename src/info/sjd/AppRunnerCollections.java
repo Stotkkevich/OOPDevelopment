@@ -24,9 +24,9 @@ public class AppRunnerCollections {
 		triangle.setHeight(6);
 		
 		List<Shape> shapes = new ArrayList<>();
-		shapes.add(triangle);
-		shapes.add(square);
 		shapes.add(circle);
+		shapes.add(square);
+		shapes.add(triangle);
 		
 		Shape maxShape = null;
 		Shape minShape = null;
