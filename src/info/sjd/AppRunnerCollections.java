@@ -1,7 +1,6 @@
 package info.sjd;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.logging.Level;
 import java.util.logging.Logger;
 
 import info.sjd.circle.Circle;
@@ -54,10 +53,10 @@ public class AppRunnerCollections {
 			}
 		}
 		
-		logger.log(Level.INFO, "Shape " + maxShape.getClass().getSimpleName() + " has maximal area " + 
+		logger.info("Shape " + maxShape.getClass().getSimpleName() + " has maximal area " + 
 		maxShape.getArea());
 		
-		logger.log(Level.INFO, "Shape " + minShape.getClass().getSimpleName() + " has minimal area " + 
+		logger.info("Shape " + minShape.getClass().getSimpleName() + " has minimal area " + 
 				minShape.getArea());
 		
 	}
