@@ -1,8 +1,5 @@
 package info.sjd;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
 import java.util.logging.Logger;
 
 public class Palindrom {
@@ -10,30 +7,29 @@ public class Palindrom {
 	private static Logger logger = Logger.getLogger(Palindrom.class.getName());
 
 	public static void main(String[] args) {
-		int result = getMaxPalindrom();
-		
-		logger.info("Max palindrom is " + result);
+		int result = getMaxPalindrome();
+
+		logger.info("Max palindrome is " + result);
 	}
 
-	public static int getMaxPalindrom() {
-		
-		List<Integer> palindrom = new ArrayList<>();
-
-		for (int a = 12; a < 100; a++) {
-			for (int b = 24; b < 100; b++) {
+	private static int getMaxPalindrome() {
+		for (int a = 9999; a > 999; a--) {
+			for (int b = 9999; b > 999; b--) {
 				int result = a * b;
-
-				if (resultIsPalindrom(result)) {
-					palindrom.add(result);
-				}
+				if (isPalindrome(result))
+					return result;
 			}
 		}
-		return Collections.max(palindrom);
+		return -1;
 	}
 
-	public static boolean resultIsPalindrom(int result) {
-		// TODO Auto-generated method stub
-		String palindrome = new StringBuilder(String.valueOf(result)).reverse().toString();
-		return palindrome.equals(String.valueOf(result));
+	private static boolean isPalindrome(int result) {
+		final String str = String.valueOf(result);
+		int length = str.length();
+		for (int i = 0; i < length / 2; i++) {
+			if (str.charAt(i) != str.charAt(length - 1 - i))
+				return false;
+		}
+		return true;
 	}
 }
